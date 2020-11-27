@@ -12,7 +12,7 @@
         android:id="@+id/toolbarContacts"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:elevation="20dp"
+        android:background="@drawable/background_toolbar_underline"
         app:title="@string/contact_list"
         app:titleTextColor="@android:color/black" />
 

@@ -12,7 +12,7 @@
         android:id="@+id/toolbarContactDetail"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:elevation="20dp"
+        android:background="@drawable/background_toolbar_underline"
         app:layout_constraintTop_toTopOf="parent"
         app:title="@string/contact_detail"
         app:titleTextColor="@android:color/black" />
@@ -27,10 +27,10 @@
 
             <ImageView
                 android:id="@+id/imgContactAvatar"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_width="@dimen/size_64"
+                android:layout_height="@dimen/size_64"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_medium"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:src="@drawable/ic_contact_placeholder" />
@@ -39,7 +39,7 @@
                 android:id="@+id/tvContactName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="@dimen/spacing_small"
                 android:textColor="@android:color/black"
                 app:layout_constraintBottom_toTopOf="@id/rvPhones"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -51,8 +51,8 @@
                 android:id="@+id/rvPhones"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/imgContactAvatar"

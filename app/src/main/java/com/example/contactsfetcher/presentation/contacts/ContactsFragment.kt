@@ -35,15 +35,6 @@ class ContactsFragment : Fragment(R.layout.fragment_contacts) {
 
         initViews()
         observe()
-
-//        if (ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.READ_CONTACTS)
-//            == PackageManager.PERMISSION_GRANTED
-//        ) {
-//            val contacts = fetchContacts()
-//            adapter.updateItems(contacts)
-//        } else {
-//            requestPermission()
-//        }
     }
 
     private fun initViews() {

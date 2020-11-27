@@ -19,7 +19,6 @@ class ContactsViewModel(
     val contactItemsEvents by lazy { MutableLiveData<List<ContactItem>>() }
 
     val loaderVisibilityEvents by lazy { MutableLiveData<Boolean>() }
-
     val showErrorEvents by lazy { MutableLiveData<@StringRes Int>() }
 
     fun onViewCreated() {

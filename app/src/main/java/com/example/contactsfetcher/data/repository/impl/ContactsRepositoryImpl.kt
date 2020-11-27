@@ -6,6 +6,8 @@ import com.example.contactsfetcher.data.model.ContactItem
 import com.example.contactsfetcher.data.repository.api.ContactsRepository
 import io.reactivex.rxjava3.core.Single
 
+private const val EMPTINESS = ""
+
 class ContactsRepositoryImpl(
     private val contentResolver: ContentResolver
 ) : ContactsRepository {
@@ -44,7 +46,7 @@ class ContactsRepositoryImpl(
 
                 val contact = ContactItem(
                     avatarUrl = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.PHOTO_URI))
-                        ?: "",
+                        ?: EMPTINESS,
                     name = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME)),
                     phoneNumbers = phoneNumbers
                 )
